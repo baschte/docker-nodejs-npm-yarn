@@ -7,5 +7,6 @@ RUN mkdir -p /data/server \
 RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - \
 	&& sudo apt-get install -y nodejs \
 	&& sudo npm -g install npm@latest-2 \
+	&& sudo npm -g install yarn \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
